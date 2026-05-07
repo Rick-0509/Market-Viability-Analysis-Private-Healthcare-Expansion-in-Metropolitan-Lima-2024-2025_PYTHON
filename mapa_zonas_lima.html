@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d94d7dd81d82b1e640c67fa521d11807 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+<div style="position:fixed; bottom:30px; left:30px; z-index:1000;
+     background:white; padding:15px; border-radius:10px;
+     border:2px solid #B8D4EE; font-size:12px; font-family:Arial">
+    <b style="color:#1B2A4A">🏥 Zonas Lima </b><br><br>
+    ⚫ Tamaño = N° establecimientos<br><br>
+    🔵 Lima Norte<br>
+    🔵 Lima Sur<br>
+    🔵 Lima Centro<br>
+    🔵 Lima Este<br>
+    🟣 Callao
+</div>
+    
+            <div class="folium-map" id="map_d94d7dd81d82b1e640c67fa521d11807" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d94d7dd81d82b1e640c67fa521d11807 = L.map(
+                "map_d94d7dd81d82b1e640c67fa521d11807",
+                {
+                    center: [-12.0464, -77.0428],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5bce0805cfd73e5cc7e6f1d7c384501a = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5bce0805cfd73e5cc7e6f1d7c384501a.addTo(map_d94d7dd81d82b1e640c67fa521d11807);
+        
+    
+            var circle_marker_beb5d587e1477ce069464b1ec219d1e5 = L.circleMarker(
+                [-11.9338, -77.0625],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "darkblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 62.13333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_d94d7dd81d82b1e640c67fa521d11807);
+        
+    
+        var popup_451c8c14fe52a2eca6e6db21d63ca422 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_cb95e042af60c0b864d8b02a2acebe0a = $(`<div id="html_cb95e042af60c0b864d8b02a2acebe0a" style="width: 100.0%; height: 100.0%;"><b>LIMA NORTE</b><br>Establecimientos: 1,864</div>`)[0];
+                popup_451c8c14fe52a2eca6e6db21d63ca422.setContent(html_cb95e042af60c0b864d8b02a2acebe0a);
+            
+        
+
+        circle_marker_beb5d587e1477ce069464b1ec219d1e5.bindPopup(popup_451c8c14fe52a2eca6e6db21d63ca422)
+        ;
+
+        
+    
+    
+            circle_marker_beb5d587e1477ce069464b1ec219d1e5.bindTooltip(
+                `<div>
+                     LIMA NORTE: 1,864 establecimientos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c7a448f0de7817f3dcf8da79146b5a2b = L.marker(
+                [-11.9338, -77.0625],
+                {
+}
+            ).addTo(map_d94d7dd81d82b1e640c67fa521d11807);
+        
+    
+            var div_icon_4e6b0fc3f287094d63017562e0647523 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px; font-weight:bold; color:#1B2A4A; white-space:nowrap;\"\u003eLIMA NORTE\u003cbr\u003e1,864\u003c/div\u003e",
+  "iconSize": [120, 40],
+  "className": "empty",
+});
+        
+    
+                marker_c7a448f0de7817f3dcf8da79146b5a2b.setIcon(div_icon_4e6b0fc3f287094d63017562e0647523);
+            
+    
+            var circle_marker_981537c44c9d2d3073059635fa3a7bb1 = L.circleMarker(
+                [-12.19, -76.97],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 44.93333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_d94d7dd81d82b1e640c67fa521d11807);
+        
+    
+        var popup_775b2b9fd13d94c696686b1f8e1747a5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_71a5ae60d9baf819449073ebde38e0af = $(`<div id="html_71a5ae60d9baf819449073ebde38e0af" style="width: 100.0%; height: 100.0%;"><b>LIMA SUR</b><br>Establecimientos: 1,348</div>`)[0];
+                popup_775b2b9fd13d94c696686b1f8e1747a5.setContent(html_71a5ae60d9baf819449073ebde38e0af);
+            
+        
+
+        circle_marker_981537c44c9d2d3073059635fa3a7bb1.bindPopup(popup_775b2b9fd13d94c696686b1f8e1747a5)
+        ;
+
+        
+    
+    
+            circle_marker_981537c44c9d2d3073059635fa3a7bb1.bindTooltip(
+                `<div>
+                     LIMA SUR: 1,348 establecimientos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9fb9c1512667f49742650f25d98d3cff = L.marker(
+                [-12.19, -76.97],
+                {
+}
+            ).addTo(map_d94d7dd81d82b1e640c67fa521d11807);
+        
+    
+            var div_icon_6c62fe64383f5afcf8979d3177337958 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px; font-weight:bold; color:#1B2A4A; white-space:nowrap;\"\u003eLIMA SUR\u003cbr\u003e1,348\u003c/div\u003e",
+  "iconSize": [120, 40],
+  "className": "empty",
+});
+        
+    
+                marker_9fb9c1512667f49742650f25d98d3cff.setIcon(div_icon_6c62fe64383f5afcf8979d3177337958);
+            
+    
+            var circle_marker_f1fac5badd9776589c96002f36591a40 = L.circleMarker(
+                [-12.08, -77.05],
+                {"bubblingMouseEvents": true, "color": "cadetblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "cadetblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 134.26666666666668, "stroke": true, "weight": 3}
+            ).addTo(map_d94d7dd81d82b1e640c67fa521d11807);
+        
+    
+        var popup_4dc75c7167182664152900767de00d70 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6cf2d0583772ab1aa803f924fcd67d65 = $(`<div id="html_6cf2d0583772ab1aa803f924fcd67d65" style="width: 100.0%; height: 100.0%;"><b>LIMA CENTRO</b><br>Establecimientos: 4,028</div>`)[0];
+                popup_4dc75c7167182664152900767de00d70.setContent(html_6cf2d0583772ab1aa803f924fcd67d65);
+            
+        
+
+        circle_marker_f1fac5badd9776589c96002f36591a40.bindPopup(popup_4dc75c7167182664152900767de00d70)
+        ;
+
+        
+    
+    
+            circle_marker_f1fac5badd9776589c96002f36591a40.bindTooltip(
+                `<div>
+                     LIMA CENTRO: 4,028 establecimientos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_87bf2ddb87c2421efa1afdb07687535e = L.marker(
+                [-12.08, -77.05],
+                {
+}
+            ).addTo(map_d94d7dd81d82b1e640c67fa521d11807);
+        
+    
+            var div_icon_17b834a33cedb5bd10a765a63007e12f = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px; font-weight:bold; color:#1B2A4A; white-space:nowrap;\"\u003eLIMA CENTRO\u003cbr\u003e4,028\u003c/div\u003e",
+  "iconSize": [120, 40],
+  "className": "empty",
+});
+        
+    
+                marker_87bf2ddb87c2421efa1afdb07687535e.setIcon(div_icon_17b834a33cedb5bd10a765a63007e12f);
+            
+    
+            var circle_marker_60f729653c84f04e387dbdc08d6f6a2d = L.circleMarker(
+                [-12.02, -76.95],
+                {"bubblingMouseEvents": true, "color": "lightblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "lightblue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 57.43333333333333, "stroke": true, "weight": 3}
+            ).addTo(map_d94d7dd81d82b1e640c67fa521d11807);
+        
+    
+        var popup_bbc6c2502880fef2be0f5740a8004e2b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ca9ca64e9b81ac8d8d9521db48317fa6 = $(`<div id="html_ca9ca64e9b81ac8d8d9521db48317fa6" style="width: 100.0%; height: 100.0%;"><b>LIMA ESTE</b><br>Establecimientos: 1,723</div>`)[0];
+                popup_bbc6c2502880fef2be0f5740a8004e2b.setContent(html_ca9ca64e9b81ac8d8d9521db48317fa6);
+            
+        
+
+        circle_marker_60f729653c84f04e387dbdc08d6f6a2d.bindPopup(popup_bbc6c2502880fef2be0f5740a8004e2b)
+        ;
+
+        
+    
+    
+            circle_marker_60f729653c84f04e387dbdc08d6f6a2d.bindTooltip(
+                `<div>
+                     LIMA ESTE: 1,723 establecimientos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_001060f9da303fec83b4bc64a3f1e91b = L.marker(
+                [-12.02, -76.95],
+                {
+}
+            ).addTo(map_d94d7dd81d82b1e640c67fa521d11807);
+        
+    
+            var div_icon_a4c6fd7e93b99cada430e8824f8071d0 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px; font-weight:bold; color:#1B2A4A; white-space:nowrap;\"\u003eLIMA ESTE\u003cbr\u003e1,723\u003c/div\u003e",
+  "iconSize": [120, 40],
+  "className": "empty",
+});
+        
+    
+                marker_001060f9da303fec83b4bc64a3f1e91b.setIcon(div_icon_a4c6fd7e93b99cada430e8824f8071d0);
+            
+    
+            var circle_marker_26e1e03572e47f6c322fd448147fc0a9 = L.circleMarker(
+                [-12.0566, -77.1181],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.4, "stroke": true, "weight": 3}
+            ).addTo(map_d94d7dd81d82b1e640c67fa521d11807);
+        
+    
+        var popup_a313534f38544d33801175e0f080a5e1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_481f722e867e1cbc09bf7a8ab715bdc8 = $(`<div id="html_481f722e867e1cbc09bf7a8ab715bdc8" style="width: 100.0%; height: 100.0%;"><b>CALLAO</b><br>Establecimientos: 882</div>`)[0];
+                popup_a313534f38544d33801175e0f080a5e1.setContent(html_481f722e867e1cbc09bf7a8ab715bdc8);
+            
+        
+
+        circle_marker_26e1e03572e47f6c322fd448147fc0a9.bindPopup(popup_a313534f38544d33801175e0f080a5e1)
+        ;
+
+        
+    
+    
+            circle_marker_26e1e03572e47f6c322fd448147fc0a9.bindTooltip(
+                `<div>
+                     CALLAO: 882 establecimientos
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b7ccff1b69ae7bb7a2528cf343514bd2 = L.marker(
+                [-12.0566, -77.1181],
+                {
+}
+            ).addTo(map_d94d7dd81d82b1e640c67fa521d11807);
+        
+    
+            var div_icon_d65eac6b6633aecf3dedcf01c1bcca54 = L.divIcon({
+  "html": "\u003cdiv style=\"font-size:10px; font-weight:bold; color:#1B2A4A; white-space:nowrap;\"\u003eCALLAO\u003cbr\u003e882\u003c/div\u003e",
+  "iconSize": [120, 40],
+  "className": "empty",
+});
+        
+    
+                marker_b7ccff1b69ae7bb7a2528cf343514bd2.setIcon(div_icon_d65eac6b6633aecf3dedcf01c1bcca54);
+            
+</script>
+</html>
